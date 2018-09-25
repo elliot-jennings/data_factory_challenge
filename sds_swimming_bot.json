@@ -1,0 +1,13 @@
+{
+  "name": "Sarah Swimalot",
+  "gender": "Female",
+  "nation": "AI",
+  "sport": "Swimming",
+  "event": "200m Individual Medley",
+  "race_model": {
+    "split_50m": 0,
+    "split_100m": 0,
+    "split_150m": 0,
+    "split_200m": 0
+  }
+}
