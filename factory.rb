@@ -19,11 +19,12 @@ ultimate_swimming_bot = {
   nation: 'AI',
   sport: 'Swimming',
   event: '200m Individual Medley',
+  result: 'mm:ss.00',
   race_model: {
-    split_50m: 0,
-    split_100m: 0,
-    split_150m: 0,
-    split_200m: 0
+    splits_50m: 0,
+    splits_100m: 0,
+    splits_150m: 0,
+    splits_200m: 0
   }
 }
 
@@ -32,3 +33,5 @@ DataAnalyser.new(factory_swimming_data, ultimate_swimming_bot).call
 
 # Save the framework of our ultimate swimmer for our clients.
 File.write('ultimate_swimming_bot.json', ultimate_swimming_bot.to_json)
+
+p "#{ultimate_swimming_bot[:name]} v2.12 build complete..."
