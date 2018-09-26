@@ -13,6 +13,9 @@ factory_swimming_data = JSON.parse(File.read('factory_swimming_data.json'))
 DataMapper.new(factory_swimming_data).call
 
 # Our Ultimate Swimmiming Bot.
+# Hint: The swimming bot is a hash object utilising new syntax, so the keys are symbols not strings like when we handle json data.
+# E.g To access swimming bots splits_50m, we would access like so:
+# ultimate_swimming_bot[:race_model][:splits_50m]
 ultimate_swimming_bot = {
   name: 'Sarah Swimalot',
   gender: 'Female',
