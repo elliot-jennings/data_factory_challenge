@@ -6,7 +6,7 @@
 
 1. Fork this repository.
 
-2. Set up the project locally (from your fork), bundle install and open up the challenge in atom.
+2. Set up the project locally (clone from your fork), bundle install and open up the challenge in atom.
 
 3. Read the rest of this Readme and inspect all the project files.
 
