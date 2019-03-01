@@ -1,1 +1,14 @@
-{"name":"Sarah Swimalot","gender":"Female","nation":"AI","sport":"Swimming","event":"200m Individual Medley","result":"2:07.97","race_model":{"splits_50m":27.91,"splits_100m":32.73,"splits_150m":36.29,"splits_200m":31.04}}
+{
+    "name": "Sarah Swimalot",
+    "gender": "Female",
+    "nation": "AI",
+    "sport": "Swimming",
+    "event": "200m Individual Medley",
+    "result": "mm:ss.00",
+    "race_model": {
+        "splits_50m": 0,
+        "splits_100m": 0,
+        "splits_150m": 0,
+        "splits_200m": 0
+    }
+}

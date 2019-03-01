@@ -12,6 +12,47 @@ factory_swimming_data = JSON.parse(File.read('factory_swimming_data.json'))
 # Map the data to include unaccumulated splits.
 DataMapper.new(factory_swimming_data).call
 
+# Find the DQ Athlete and remove them from the data
+
+factory_swimming_data.each do |athlete|
+    if "c_Result" == "DQ  "
+      # Ignore data
+    end
+end
+
+# Find the "Splits_50m" times and sort them. Put the fastest time into the ultimate_swimming_bot.json file.
+
+# Find the "Splits_100m" times by obtaining integers and subtracting the "Splits_50m" times from the "Splits_100m" time and sort them. 
+# Put the fastest time into the ultimate_swimming_bot.json file.
+
+
+factory_swimming_data.each do |athlete|
+
+require '100m_time'
+50m = Time.parse('00:00')
+100m = Time.parse('10:30')
+
+(100m.to_i - 50m.to_i)
+    
+
+# Find the "Splits_150m" times by obtaining integers and subtracting the "Splits_100m" times from the "Splits_150m" time and sort them. 
+# Put the fastest time into the ultimate_swimming_bot.json file.
+
+# Find the "Splits_200m" times by obtaining integers and subtracting the "Splits_100m" times from the "c_Result" time and sort them. 
+# Put the fastest time into the ultimate_swimming_bot.json file.
+
+def filter_stroke
+  Butterfly = ['Defender']
+
+  targets.each do |athlete|
+      if defenders.include?(athlete["Position"])
+          @successful_candidates << athlete
+      else
+       # Do nothing
+      end
+  end
+end
+
 # Our Ultimate Swimmiming Bot.
 # Hint: The swimming bot is a hash object utilising new syntax, so the keys are symbols not strings like when we handle json data.
 # E.g To access swimming bots splits_50m, we would access like so:
